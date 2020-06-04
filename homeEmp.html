@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <title>Home Page</title>
+</head>
+<style>
+   body {
+      background-image: url("https://wallpaperaccess.com/full/656665.jpg") ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+   }
+</style>
+
+<body>
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://gg-bucket.appspot.com/view">Employee Record</a>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="https://gg-bucket.appspot.com/home">DonDon Company</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="https://gg-bucket.appspot.com/detail">Name Frequency</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+   <div class = "container-fluid" style="margin-top: 5%">
+      <h1 class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; text-align: right; font-size:5em;"
+      >Welcome to DonDon Company</h1>
+      <button  style="margin-right: 8%"type="button" class="btn btn-info btn-lg float-right" onclick="freqClicked()">View name frequency</button>
+      <button   style="margin-right: 1%" type="button" class="btn btn-primary btn-lg float-right" onclick="recordClicked()">Check employee record</button>
+   </div>
+
+   <script>
+
+      function recordClicked() {
+         window.open("https://gg-bucket.appspot.com/view","_self");
+      }
+
+      function freqClicked() {
+         window.open("https://gg-bucket.appspot.com/detail", "_self");
+
+      }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+runtime: php55
+api_version: 2
+handlers:
+
+- url: /load
+  script: loadEmp.php
+
+- url: /view
+  script: /viewEmp.php
+
+- url: /detail
+  script: /detailEmp.php
+  
+- url: /add
+  script: /addEmp.php
+
+- url: /delete
+  script: /deleteEmp.php
+
+- url: /update
+  script: /updateEmp.php
+
+- url: /.*
+  script: homeEmp.html
